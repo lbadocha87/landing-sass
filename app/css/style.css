@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  color: #fff;
+  font-family: "Open Sans", sans-serif; }
+
+a {
+  color: #fff;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+.container {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.row {
+  display: flex;
+  flex-wrap: wrap; }
+
+.col-1-2 {
+  flex-basis: 50%; }
+
+.yellow-color {
+  color: #ecd407; }
+
+.container-relative {
+  position: relative;
+  height: 100%; }
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 992px; } }
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px; }
+  .col-1-2 {
+    flex-basis: 100%; } }
+
+@media (max-width: 840px) {
+  .container {
+    width: 90%; } }
+
+.header {
+  position: absolute;
+  width: 100%;
+  padding-top: 15px; }
+  .header h1 {
+    margin: 0; }
+  .header .content-right {
+    display: flex;
+    justify-content: flex-end; }
+  .header .contact-data i {
+    font-size: 1.8em;
+    line-height: 1.4; }
+  .header .contact-data .contact-inner {
+    margin-left: 10px; }
+    .header .contact-data .contact-inner span {
+      display: block; }
+      .header .contact-data .contact-inner span.small-text {
+        font-size: 0.8em; }
+
+@media (max-width: 1024px) {
+  .header .col-1-2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px; } }
+
+.form-section {
+  height: 100vh;
+  background-image: url(../img/background.png);
+  background-position: center;
+  background-size: cover;
+  min-height: 700px; }
+  .form-section .form-holder {
+    width: 360px;
+    position: absolute;
+    right: 0;
+    top: 25%; }
+    .form-section .form-holder form {
+      background-color: #001d8a;
+      padding: 15px; }
+      .form-section .form-holder form input,
+      .form-section .form-holder form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        font-family: "Open Sans", sans-serif; }
+      .form-section .form-holder form input[type="submit"] {
+        width: auto;
+        background-color: #ecd407;
+        border: 1px solid #ecd407;
+        cursor: pointer;
+        font-weight: 700; }
+        .form-section .form-holder form input[type="submit"]:hover {
+          background-color: #fff; }
+
+@media (max-width: 1024px) {
+  .form-section .form-holder {
+    left: 0;
+    right: 0;
+    margin: auto; } }
+
+@media (max-width: 480px) {
+  .form-section .form-holder {
+    width: 100%; } }
+
+.footer {
+  background-color: #292929;
+  text-align: center; }
+  .footer i {
+    background-color: #ecd407;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #292929; }
+  .footer .col-1-2 {
+    padding: 30px 0; }
+  .footer a,
+  .footer span {
+    margin-top: 5px;
+    display: block; }

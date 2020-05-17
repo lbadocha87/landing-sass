@@ -1,0 +1,47 @@
+.header {
+    position: absolute;
+    width: 100%;
+    padding-top: 15px;
+
+    h1 {
+        margin: 0;
+    }
+
+    .content-right {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .contact-data {
+
+        i {
+            font-size: 1.8em;
+            line-height: 1.4;
+        }
+
+        .contact-inner {
+
+            margin-left: 10px;
+
+            span {
+                display: block;
+
+                &.small-text {
+                    font-size: 0.8em;
+                }
+            }
+            
+        }
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .header {
+        .col-1-2 {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+    }
+}

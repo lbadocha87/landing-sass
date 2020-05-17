@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: $primary-font-color;
+    font-family: $base-font-family;
+}
+
+a {
+    color: $primary-font-color;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.container {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-1-2 {
+    flex-basis: 50%;
+}
+
+.yellow-color {
+    color: $secondary-font-color;
+}
+
+.container-relative {
+    position: relative;
+    height: 100%;
+}
+
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 992px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .col-1-2 {
+        flex-basis: 100%;
+    }
+}
+
+
+@media (max-width: 840px) {
+    .container {
+        width: 90%;
+    }
+}

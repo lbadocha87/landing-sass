@@ -1,0 +1,6 @@
+@mixin square-icon($size) {
+    height: $size;
+    width: $size;
+    line-height: $size;
+    text-align: center;
+}
